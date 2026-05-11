@@ -1,78 +1,155 @@
-# Java Control Flow
+# 🔀 Control Flow in Java
 
-## Conditional Statements
+This section covers the fundamental control flow concepts in Java used to control the execution of programs.
 
-### if-else
+Control flow statements help in making decisions, repeating tasks, and controlling program execution based on conditions.
+
+---
+
+## 📚 Topics Covered
+
+### ✅ Conditional Statements
+- `if`
+- `if-else`
+- `else-if`
+- Nested `if`
+- `switch`
+
+### ✅ Loops
+- `for` loop
+- `while` loop
+- `do-while` loop
+- Nested loops
+
+### ✅ Jump Statements
+- `break`
+- `continue`
+- `return`
+
+### ✅ Ternary Operator
+- Conditional shorthand syntax
+
+---
+
+## 🧠 Why Control Flow Matters
+
+Control flow is the foundation of programming logic and problem solving.
+
+It is used in:
+- Decision making
+- Iteration and repetition
+- Data processing
+- Algorithm implementation
+- Real-world application logic
+
+---
+
+## 📂 Example Structure
+
+```bash
+control-flow/
+├── if-else/
+├── switch/
+├── loops/
+├── break-continue/
+└── ternary-operator/
+```
+
+---
+
+## 💻 Sample Examples
+
+### 🔹 If-Else
+
 ```java
-if (condition) {
-  // code
-} else if (condition) {
-  // code
+int age = 20;
+
+if(age >= 18) {
+    System.out.println("Eligible to vote");
 } else {
-  // code
+    System.out.println("Not eligible");
 }
 ```
 
-### switch
+---
+
+### 🔹 Switch Statement
+
 ```java
-switch (value) {
-  case 1:
-    // code
-    break;
-  default:
-    // code
+int day = 2;
+
+switch(day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+    case 2:
+        System.out.println("Tuesday");
+        break;
+    default:
+        System.out.println("Invalid day");
 }
 ```
 
-### Ternary Operator
-```java
-result = condition ? valueIfTrue : valueIfFalse;
-```
+---
 
-## Loops
+### 🔹 For Loop
 
-### for
 ```java
-for (int i = 0; i < 10; i++) {
-  // code
+for(int i = 1; i <= 5; i++) {
+    System.out.println(i);
 }
 ```
 
-### for-each
+---
+
+### 🔹 While Loop
+
 ```java
-for (Type item : collection) {
-  // code
+int i = 1;
+
+while(i <= 5) {
+    System.out.println(i);
+    i++;
 }
 ```
 
-### while
+---
+
+### 🔹 Ternary Operator
+
 ```java
-while (condition) {
-  // code
-}
+int num = 10;
+
+String result = (num % 2 == 0) ? "Even" : "Odd";
 ```
 
-### do-while
-```java
-do {
-  // code
-} while (condition);
-```
+---
 
-## Jump Statements
+## ⚠️ Common Mistakes
 
-### break
-Terminates loop or switch statement.
+- Infinite loops
+- Missing `break` in switch
+- Incorrect loop conditions
+- Deep nested conditions reducing readability
 
-### continue
-Skips current iteration.
+---
 
-### return
-Exits method and returns value.
+## 💡 Key Takeaways
 
-### label (with break/continue)
-```java
-labelName: for (...) {
-  break labelName;
-}
-```
+- Control flow determines program behavior
+- Loops reduce repetitive code
+- Conditions help build logical programs
+- Proper flow control improves code readability and efficiency
+
+---
+
+## 🎯 Learning Goals
+
+- Build strong programming fundamentals
+- Understand execution flow in Java
+- Prepare for DSA and backend development
+- Improve problem-solving skills
+
+---
+
+⭐ Consistent practice is the key to mastering programming logic.
